@@ -2,6 +2,7 @@
   import "./layout.css";
   import favicon from "$lib/assets/favicon.svg";
   import Icon from "@iconify/svelte";
+  import BarraDeMusica from "$lib/components/Barra-de-musica.svelte";
 
   let { children } = $props();
 </script>
@@ -29,3 +30,5 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 {@render children()}
+
+<BarraDeMusica />
