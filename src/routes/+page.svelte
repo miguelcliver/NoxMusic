@@ -1,3 +1,15 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+  import TarjetaMusica from "$lib/components/Tarjeta-musica.svelte";
+  import axios from "axios";
+  const respuesta = axios.get("https://leonardoapi.vercel.app/api/tracks");
+</script>
 
+<div>
+  {#await respuesta}
+    Respuesta en desarrollo
+  {:then respuesta}
+    {#each respuesta.data.tracks as track}
+      <TarjetaMusica cancion={track} />
+    {/each}
+  {/await}
+</div>

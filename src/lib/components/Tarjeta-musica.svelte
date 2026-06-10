@@ -1,16 +1,15 @@
 <script>
-  const { imagen, titulo, artista, album, duracion } = $props();
+  const {cancion} = $props()
 </script>
 
-
-  <div>
-    <img src={imagen} alt="" />
-    <p>{titulo}</p>
-    <p>{artista}</p>
+<div class="flex py-3">
+  <div class="flex px-3 gap-3">
+    <img src={cancion.album.image} alt=""  class="w-20 rounded-2xl  "/>
+    <p>{cancion.title}</p>
+    <p>{cancion.artist.name}</p>
   </div>
 
-<div>
-<p>{album}</p>
+  <div class="">
+    <p>{cancion.album.title}</p>
+  </div>
 </div>
-
-<div>{duracion}</div>
