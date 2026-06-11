@@ -14,12 +14,12 @@
   <div class="col-span-5 flex px-5 gap-4 ">
     <img src={cancion.album.image} alt="" class="w-20 rounded-2xl  object-cover shadow-md border border-white/5" />
     <div class="flex flex-col justify-center min-w-0 gap-1">
-    <p class="font-sans text-xl font-black text-white tracking-wide uppercase truncate">{cancion.title}</p>
+    <p class="font-inter text-xl font-black text-white tracking-wide uppercase truncate">{cancion.title}</p>
     <p class="font-mono text-sm font-medium text-blue-400 tracking-wider truncate">{cancion.artist.name}</p>
   </div>
   </div>
 
-  <div class="col-span-3 flex items-center justify-center min-w-0 h-full text-center">
+  <div class="col-span-3 flex items-center justify-center min-w-0 h-full text-center ">
     <p class="font-sans text-sm font-bold text-neutral-400 truncate">{cancion.album.title}</p>
   </div>
   <button onclick={cambiar} class="  ">
