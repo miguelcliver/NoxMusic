@@ -4,6 +4,9 @@
 let cancionActual = $derived (obtenerCancion())
 </script>
 
-<div>
+<div class="bg-gray-950">
+  <div>
+    <img src={cancionActual?.album.image} alt="" class="w-24">
+  </div>
   <audio src={cancionActual?.audio} controls autoplay></audio>
 </div>

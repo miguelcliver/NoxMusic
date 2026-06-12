@@ -34,4 +34,6 @@
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 {@render children()}
 
-<BarraDeMusica />
+<div class="sticky bottom-0 left-0">
+  <BarraDeMusica />
+</div>
