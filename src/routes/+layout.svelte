@@ -21,13 +21,7 @@
       <Icon icon="boxicons:home" width={20} height={20} /> Home
     </a>
 
-    <a href="/library" class="flex items-center gap-1 text-white font-sans font-bold transition-all duration-300 hover:text-cyan-400"
-      ><Icon
-        icon="material-symbols:library-music-outline"
-        width={20}
-        height={20}
-      /> library
-    </a>
+    
   </div>
 </nav>
 
